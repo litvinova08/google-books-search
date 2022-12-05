@@ -1,0 +1,13 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid pink;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+}
