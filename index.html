@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./scripts/script.js" type="module" defer></script>
     <title>Google Book API Search Engine</title>
   </head>
   <body>
-    <h1>Search google Books</h1>
-    <input id="searchTerm" type="text" />
-    <button class="search-btn">Search</button>
+    <section class="section">
+      <h1 class="section__h1">
+        Search <span class="blue">G</span><span class="red">o</span
+        ><span class="yellow">o</span><span class="blue">g</span
+        ><span class="green">l</span><span class="red">e</span> Books
+      </h1>
+      <input class="section__input" id="searchTerm" type="text" />
+      <button class="section__search">&#x1F50E;&#xFE0E;</button>
 
-    <div class="grid-container">
-      <div class="card">
-        <h2>Book Title</h2>
-        <h3>Book Author</h3>
-        <img src="https://loremflickr.com/g/120/200/dog" alt="Book image" />
-        <p>Book Description</p>
+      <div class="section__grid"></div>
+      <div class="not-found">
+        <h3>Bopk not found</h3>
       </div>
-    </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,33 @@
+@import "./partials.scss";
+
+.not-found {
+  display: none;
+  width: 880px;
+  height: 880px;
+
+  &--open {
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-color: yellow;
+  }
+}
+
+.extraInfo {
+  display: none;
+  width: 880px;
+  height: 880px;
+
+  &--open {
+    display: block;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    background-color: yellow;
+  }
+}
+
+.close {
+  background-color: peru;
+}

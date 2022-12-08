@@ -1,0 +1,66 @@
+@import "./partials.scss";
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2px solid rgb(210, 207, 207);
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+
+  &__book-title {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 5px;
+  }
+
+  &__book-author {
+    font-weight: 200;
+    font-size: 15px;
+    margin: 5px 5px;
+  }
+
+  &__book-image {
+    width: 60%;
+    height: auto;
+    align-items: center;
+  }
+
+  &__btnContainer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+
+    background-color: red;
+  }
+
+  &__btn-desc {
+    display: none;
+    width: 380px;
+    height: 480px;
+
+    &--open {
+      display: block;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      background-color: yellow;
+    }
+  }
+
+  &__btn-info {
+    display: none;
+    width: 380px;
+    height: 480px;
+
+    &--open {
+      display: block;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      background-color: rgb(208, 23, 162);
+    }
+  }
+}

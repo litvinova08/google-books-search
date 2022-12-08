@@ -1,13 +1,10 @@
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+@use "./google.scss";
+@use "./section.scss";
+@use "./cards.scss";
+@use "./additionalInfo.scss";
+@import "./partials.scss";
 
-.card {
-  border: 2px solid pink;
-  height: 400px;
-  width: 300px;
-  text-align: center;
-  margin: 20px;
+* {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
 }

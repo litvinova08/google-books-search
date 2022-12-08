@@ -1,15 +1,139 @@
-.grid-container {
+.green {
+  color: #4aa750;
+  text-shadow: 0 0;
+}
+
+.blue {
+  color: #568bfa;
+  text-shadow: 0 0;
+}
+
+.red {
+  color: #df4536;
+  text-shadow: 0 0;
+}
+
+.yellow {
+  color: #f5bc00;
+  text-shadow: 0 0;
+}
+
+.section {
+  text-align: center;
+}
+.section__h1 {
+  margin: 50px;
+  font-size: 50px;
+  color: rgb(205, 203, 203);
+  text-shadow: 1px 1px #568bfa;
+}
+.section__input {
+  width: 50%;
+  height: 20px;
+  border: 0.2px solid rgb(210, 207, 207);
+}
+.section__search {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  text-align: left;
+}
+.section__grid {
+  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  border: 2px solid pink;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.2px solid rgb(210, 207, 207);
   height: 400px;
   width: 300px;
-  text-align: center;
   margin: 20px;
+}
+.card__book-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px 5px;
+}
+.card__book-author {
+  font-weight: 200;
+  font-size: 15px;
+  margin: 5px 5px;
+}
+.card__book-image {
+  width: 60%;
+  height: auto;
+  align-items: center;
+}
+.card__btnContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: red;
+}
+.card__btn-desc {
+  display: none;
+  width: 380px;
+  height: 480px;
+}
+.card__btn-desc--open {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: yellow;
+}
+.card__btn-info {
+  display: none;
+  width: 380px;
+  height: 480px;
+}
+.card__btn-info--open {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: rgb(208, 23, 162);
+}
+
+.not-found {
+  display: none;
+  width: 880px;
+  height: 880px;
+}
+.not-found--open {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: yellow;
+}
+
+.extraInfo {
+  display: none;
+  width: 880px;
+  height: 880px;
+}
+.extraInfo--open {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: yellow;
+}
+
+.close {
+  background-color: peru;
+}
+
+* {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

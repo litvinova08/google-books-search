@@ -1,0 +1,32 @@
+@import "./partials.scss";
+
+.section {
+  text-align: center;
+
+  &__h1 {
+    margin: 50px;
+    font-size: 50px;
+    color: rgb(205, 203, 203);
+    text-shadow: 1px 1px $blue;
+  }
+
+  &__input {
+    width: 50%;
+    height: 20px;
+    border: 0.2px solid rgb(210, 207, 207);
+  }
+
+  &__search {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  &__grid {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
