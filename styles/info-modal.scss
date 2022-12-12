@@ -1,0 +1,17 @@
+@import "./partials.scss";
+
+
+
+.info {
+    display: none;
+    width: 380px;
+    height: 480px;
+
+    &--open {
+      display: block;
+      position: fixed;
+      top: 30%;
+      left: 30%;
+      background-color: $yellow;
+    }
+  }
