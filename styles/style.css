@@ -33,7 +33,7 @@
   border: 0.2px solid rgb(210, 207, 207);
 }
 .section__input--empty {
-  border: 0.2px solid #df4536;
+  border: 1px solid #df4536;
 }
 .section__search {
   background-color: white;
@@ -48,29 +48,79 @@
   justify-content: center;
 }
 
-.desc {
-  display: none;
-  width: 380px;
-  height: 480px;
-}
-.desc--open {
-  display: block;
-  position: fixed;
-  top: 30%;
-  left: 30%;
-  background-color: #4aa750;
-}
-
 .info {
   display: none;
-  width: 380px;
-  height: 480px;
 }
 .info--open {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  justify-content: center;
   top: 30%;
-  left: 30%;
+  left: 10%;
+  background-color: #4aa750;
+  align-items: center;
+  border: 0.2px solid #4aa750;
+  border-radius: 20px;
+  height: 400px;
+  width: 80%;
+}
+
+.info > p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.desc {
+  display: none;
+}
+.desc--open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  top: 30%;
+  left: 10%;
+  background-color: #4aa750;
+  align-items: center;
+  border: 0.2px solid #4aa750;
+  border-radius: 20px;
+  height: 400px;
+  width: 80%;
+}
+
+.desc > p {
+  margin: 50px;
+  font-size: 20px;
+}
+
+.not-found {
+  display: none;
+}
+.not-found--open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  top: 30%;
+  left: 10%;
+  background-color: #4aa750;
+  align-items: center;
+  border: 0.2px solid #df4536;
+  border-radius: 20px;
+  height: 400px;
+  width: 80%;
+}
+
+.close {
+  border: 0.2px solid rgb(210, 207, 207);
+  border-radius: 7px;
+  margin: 20px 10px;
+  width: 40%;
+  height: 40px;
+}
+
+.close:hover {
   background-color: #f5bc00;
 }
 
@@ -110,51 +160,19 @@
   height: 20%;
   bottom: 0px;
 }
-
-.card:hover {
-  box-shadow: 1px 1px #568bfa;
-}
-
-button {
+.card__Btn {
   border: 0.2px solid rgb(210, 207, 207);
   border-radius: 7px;
   margin: 0 10px;
   width: 40%;
   height: 40px;
 }
-
-button:hover {
+.card__Btn:hover {
   background-color: #568bfa;
 }
 
-.not-found {
-  display: none;
-  width: 880px;
-  height: 880px;
-}
-.not-found--open {
-  display: block;
-  position: fixed;
-  top: 30%;
-  left: 30%;
-  background-color: yellow;
-}
-
-.extraInfo {
-  display: none;
-  width: 880px;
-  height: 880px;
-}
-.extraInfo--open {
-  display: block;
-  position: fixed;
-  top: 30%;
-  left: 30%;
-  background-color: yellow;
-}
-
-.close {
-  background-color: peru;
+.card:hover {
+  box-shadow: 1px 1px #568bfa;
 }
 
 * {

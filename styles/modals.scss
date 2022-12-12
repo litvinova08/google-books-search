@@ -1,0 +1,29 @@
+@use "./modal-mixin.scss";
+@import "./partials.scss";
+
+
+
+.info {
+  @include modal-mixin.main-card ($green);
+  }
+
+.info > p {
+  @include modal-mixin.para (20px);
+}
+
+.desc {
+
+  @include modal-mixin.main-card($green);      
+};
+
+.desc > p {
+  @include modal-mixin.para(50px);
+}
+
+
+.not-found {
+
+  @include modal-mixin.main-card($red);
+}
+
+@include modal-mixin.close (20px);

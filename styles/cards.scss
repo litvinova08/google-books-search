@@ -1,5 +1,4 @@
-@use "./desc-modal.scss";
-@use "./info-modal.scss";
+@use "./modals.scss";
 @import "./partials.scss";
 
 .card {
@@ -42,20 +41,23 @@
     height: 20%;;
     bottom: 0px;
   }
+
+  &__Btn {
+    border: 0.2px solid rgb(210, 207, 207);
+    border-radius: 7px;
+    margin: 0 10px;
+    width: 40%;
+    height: 40px;
+  }
+
+  &__Btn:hover {
+    background-color: $blue;
+  }
+
 }
 
 .card:hover {
   box-shadow: 1px 1px $blue; //read in W3 lesson about thumb smth
 }
 
-button {
-  border: 0.2px solid rgb(210, 207, 207);
-  border-radius: 7px;
-  margin: 0 10px;
-  width: 40%;
-  height: 40px;
-}
 
-button:hover {
-  background-color: $blue;
-}

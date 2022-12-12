@@ -1,0 +1,42 @@
+@import "./partials.scss";
+
+    @mixin main-card ($border-color) {
+        display: none;    
+        &--open {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          justify-content: center;
+          top: 30%;
+          left: 10%;
+          background-color: $green;
+          align-items: center;
+          border: 0.2px solid $border-color;
+          border-radius: 20px;
+          height: 400px;
+          width: 80%;
+        } 
+};
+
+@mixin para ($margin) {
+        margin: $margin;
+        font-size: 20px;
+    }
+
+
+
+@mixin close ($margin-top-bottom) {
+.close {
+
+border: 0.2px solid rgb(210, 207, 207);
+border-radius: 7px;
+margin: $margin-top-bottom 10px;
+width: 40%;
+height: 40px;
+}
+
+.close:hover {
+background-color: $yellow;
+}
+}
+
