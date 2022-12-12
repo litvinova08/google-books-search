@@ -5,13 +5,13 @@ import { createCard } from "./card.js";
 export const getBookData = (book) => {
   let checkAuthors = book.volumeInfo.authors;
   if (checkAuthors.length > 2) {
-    checkAuthors = `${checkAuthors[0]}, ${checkAuthors[1]} et al.`;
+    checkAuthors = `${checkAuthors[0]} et al.`;
   }
 
   // https://loremflickr.com/g/300/200/dog - image placeholder
 
   return {
-    image: book.volumeInfo.imageLinks.thumbnail,
+    image: (book.volumeInfo.imageLinks.thumbnail ?? "https://loremflickr.com/g/300/200/dog" ), // test this line
     author: checkAuthors,
     title: book.volumeInfo.title,
     description: book.volumeInfo.description,
