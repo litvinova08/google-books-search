@@ -149,9 +149,10 @@
   margin: 5px 5px;
 }
 .card__book-image {
-  width: 60%;
-  height: auto;
+  width: auto;
+  height: 50%;
   align-items: center;
+  margin: 10px;
 }
 .card__btnContainer {
   position: absolute;

@@ -20,9 +20,7 @@
   @include modal-mixin.para(50px);
 }
 
-
 .not-found {
-
   @include modal-mixin.main-card($red);
 }
 
