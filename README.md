@@ -9,7 +9,7 @@ This is a Google Book Search project.
 5. the user can get a book description clicking DESCRIPTION button on each card;
 6. the user can get more info about the book (publishDate, publisher, languages) clickgin on MORE INFO button;
 
-![This is an image](./assets/google-books-search.png))
+![This is an image](./assets/google-books-search.png)
 
 ## Author
 Margarita Litvinova
