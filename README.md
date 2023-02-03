@@ -37,7 +37,7 @@ This project was a good practice of learing how to use API. I aimed to separate 
 
 ### Licence
 
-- the MIT open source licence
+![This is an image](./assets/google-books-search.png))
 
 ## Author
 
