@@ -1,6 +1,5 @@
 # Google Books API Search Project
 
-![Depfu](https://img.shields.io/depfu/litvinova08/google-books-search)
 ![GitHub issues](https://img.shields.io/github/issues/litvinova08/google-books-search)
 
 ![This is a project screenshot](./assets/google-books-search.png)
