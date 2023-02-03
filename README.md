@@ -1,15 +1,44 @@
 # Google Books API Search Project
 
-This is a Google Book Search project. 
+![Depfu](https://img.shields.io/depfu/litvinova08/google-books-search)
+![GitHub issues](https://img.shields.io/github/issues/litvinova08/google-books-search)
 
-1. this search uses Google Books API;
-2. the user can enter their search request, and a grid of book card will be generated;
-3. if there is no input, the input will prompt the user to add s search term;
-4. if no books found, a modal will pop up asking a user to try and search again;
-5. the user can get a book description clicking DESCRIPTION button on each card;
-6. the user can get more info about the book (publishDate, publisher, languages) clickgin on MORE INFO button;
+![This is a project screenshot](./assets/google-books-search.png)
 
-![This is an image](./assets/google-books-search.png))
+## Link to Deployed Version
+
+https://litvinova08.github.io/google-books-search/
+
+## Description of project (spec / MVP)
+
+This project required me to use both DOM manipulation and Asynchronous programming. The aim is for the user to be able to search for a book inside the Google Books database and to be able to get more details about a certain title.
+
+- Home Page contains an input field and a search button. When the submit button is clicked an API request requests books from the Google books API using the input value as a query string. The books are rendered in the books grid.
+- The user receives feedback when no book results can be found for the query.
+- When a user clicks a book in the grid, a modal appears with more book information.
+
+## Reflection
+
+This project was a good practice of learing how to use API. I aimed to separate DOM functions and non-DOM functions in different modules and make them as pure and reusable as possible.
+
+## Future Goals
+
+- Rebuild this project with React
+- Add Default values for title/descr/author. etc (Use Optional.chaining https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+- Refactor scripts/card.js because at the moment it creates a lot of modals in the DOM that may never be opened
+- Add a load spinner while waiting for loading
+- Update styling (Input should slightly change on hover, make a flip card)
+
+### Stay in touch
+
+- Email: ma.litvinova08@gmail.com
+- Portfolio: https://litvinova08.github.io/portfolio-project/
+- Linkedin: https://www.linkedin.com/in/margarita-l-44860b15b/
+
+### Licence
+
+- the MIT open source licence
 
 ## Author
+
 Margarita Litvinova
